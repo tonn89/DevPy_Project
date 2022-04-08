@@ -22,7 +22,7 @@ class FullScreenApp(object):
         menubar = Menu(root)
         filemenu = Menu(menubar, tearoff=0)
         filemenu.add_command(label="New", command=lambda: self.donothing)
-        filemenu.add_command(label="Open", command=self.donothing)
+        filemenu.add_command(label="Open", command=self.OpenFile)
         filemenu.add_command(label="Save", command=self.donothing)
         filemenu.add_command(label="Save as...", command=self.donothing)
         filemenu.add_command(label="Close", command=self.donothing)
@@ -61,7 +61,7 @@ class FullScreenApp(object):
         button.pack()
 
     def OpenFile(self):
-        name = askopenfilename(initialdir="C:/Users/XMX4374/Documents/",
+        name = askopenfilename(initialdir=".",
                                filetypes=(("Text File", "*.txt"), ("All Files", "*.*")),
                                title="Choose a file."
                                )
