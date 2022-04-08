@@ -7,7 +7,7 @@ class FullScreenApp(object):
     def __init__(self, master, **kwargs):
         self.master = master
         master.title('Pantalla Principal')
-        master.iconbitmap(r"C:\Users\XMX4374\Documents\Python\pythonProject01\App_Project\img\ladybug-virus.ico")
+        master.iconbitmap(r"C:\Users\XMX4374\Documents\Python\pythonProject01\DevPy_Project\img\server-bug.ico")
 
         pad = 250
         self._geom = '200x20+0+0'
